@@ -10,11 +10,13 @@ module.exports = (formulario) => {
     const mailOptions = {
         from: `"${formulario.nombre} 👻" <${formulario.email}>`,
         to: 'contactenos.terumo@gmail.com', // Cambia esta parte por el destinatario
-        subject: formulario.asunto,
+        subject: formulario.empresa,
         html: `
  <strong>Nombre:</strong> ${formulario.nombre} <br/>
+ <strong>Empresa:</strong> ${formulario.empresa} <br/>
+ <strong>Cargo:</strong> ${formulario.cargo} <br/>
  <strong>E-mail:</strong> ${formulario.email} <br/>
- <strong>Mensaje:</strong> ${formulario.mensaje}
+ <strong>Mensaje:</strong> ${formulario.message}
  `
     };
     transporter.sendMail(mailOptions, function (err, info) {
