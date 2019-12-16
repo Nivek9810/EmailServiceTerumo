@@ -9,7 +9,7 @@ module.exports = (formulario) => {
     });
     const mailOptions = {
         from: `"${formulario.nombre}" <${formulario.email}>`,
-        to: 'contactenos.terumo@gmail.com;nivek9810@gmail.com', // Cambia esta parte por el destinatario: ServicioalCliente_TCA@terumomedical.com
+        to: ['contactenos.terumo@gmail.com', 'nivek9810@gmail.com'], // Cambia esta parte por el destinatario: ServicioalCliente_TCA@terumomedical.com
         subject: formulario.empresa,
         html: `
  <strong>Nombre:</strong> ${formulario.nombre} <br/>
