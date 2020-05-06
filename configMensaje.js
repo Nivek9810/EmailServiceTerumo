@@ -4,7 +4,7 @@ module.exports = (formulario) => {
         service: 'gmail',
         auth: {
             user: 'contactenos.terumo@gmail.com', // Cambialo por tu email
-            pass: 'Terumo2019' // Cambialo por tu password
+            pass: 'rafdwwrwcsgwgebp' // Cambialo por tu password
         }
     });
     const mailOptions = {
